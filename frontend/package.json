@@ -1,0 +1,48 @@
+{
+  "name": "android_app_qr_scanner_catamura",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "expo start --dev-client",
+    "android": "react-native run-android",
+    "camera-link": "react-native link react-native-camera",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "native": "eas prebuild --platform android",
+    "lint": "eslint .",
+    "build": "expo prebuild"
+  },
+  "dependencies": {
+    "@react-navigation/native": "^6.1.17",
+    "@react-navigation/stack": "^6.3.29",
+    "expo": "^50.0.14",
+    "expo-splash-screen": "^0.26.4",
+    "expo-status-bar": "^1.11.1",
+    "moment": "^2.29.4",
+    "react": "^18.2.0",
+    "react-native": "^0.73.6",
+    "react-native-gesture-handler": "^2.15.0",
+    "react-native-safe-area-context": "^4.9.0",
+    "react-native-screens": "^3.29.0",
+    "react-native-vision-camera": "^3.9.1",
+    "react-native-worklets-core": "^0.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/runtime": "^7.23.9",
+    "@react-native-community/eslint-config": "^3.2.0",
+    "babel-jest": "^29.7.0",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "deprecated-react-native-prop-types": "^5.0.0",
+    "eslint": "^8.33.0",
+    "eslint-plugin-react": "^7.32.2",
+    "jest": "^26.6.3",
+    "metro-react-native-babel-preset": "0.65.2",
+    "prettier": "2.8.3",
+    "react-native-dotenv": "^3.4.8",
+    "react-test-renderer": "18.1.0"
+  },
+  "private": true,
+  "jest": {
+    "preset": "react-native"
+  }
+}
