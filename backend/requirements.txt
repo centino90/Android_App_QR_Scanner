@@ -1,0 +1,6 @@
+opencv-python==4.9.0.80
+qrcode==7.4.2
+pyzbar==0.1.9
+
+Flask==3.0.2
+pillow==10.2.0

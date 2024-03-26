@@ -1,0 +1,34 @@
+[
+  {
+    "type": "antique",
+    "category": "vase",
+    "label": "Old vase #1",
+    "description": "a vase created in 1500",
+    "creator": "John Doe",
+    "year_created": "1500"
+  },
+  {
+    "type": "antique",
+    "category": "vase",
+    "label": "Old vase #1",
+    "description": "a vase created in 1500",
+    "creator": "John Doe",
+    "year_created": "1500"
+  },
+  {
+    "type": "antique",
+    "category": "vase",
+    "label": "Old vase #1",
+    "description": "a vase created in 1500",
+    "creator": "John Doe",
+    "year_created": "1500"
+  },
+  {
+    "type": "antique",
+    "category": "vase",
+    "label": "Old vase #1",
+    "description": "a vase created in 1500",
+    "creator": "John Doe",
+    "year_created": "1500"
+  }
+]
