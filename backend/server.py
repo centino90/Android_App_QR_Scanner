@@ -2,24 +2,33 @@ from flask import Flask, request, jsonify
 from PIL import Image
 import io
 import android_qr
+import base64
+import json
 
 app = Flask(__name__)
 
 @app.route('/process_qr_code', methods=['POST'])
 def process_qr_code():
     # Receive image file from the POST request
-    image_file = request.files['image']
+    payload = request.json
     
     # Read the image file
-    image_data = image_file.read()
+    # image_data = image_file.read()
+    print('payload', payload['image'])
     
     # Convert image data to PIL Image
-    image = Image.open(io.BytesIO(image_data))
+    image = Image.open(io.BytesIO(base64.b64decode(payload['image'])))
+    image.save("test.jpg")
     
     # Process the image for QR code decoding
     decoded_data = _decode_qr_code(image)
-    
-    return jsonify({'decoded_data': decoded_data})
+
+    try:
+        json.loads(decoded_data)
+    except ValueError as e:
+        return jsonify({'decoded_data': decoded_data})
+
+    return jsonify({'decoded_data': json.loads(decoded_data)})
 
 def _decode_qr_code(image):
     try:
